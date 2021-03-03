@@ -27,7 +27,7 @@ let package = Package(
     targets: [
         .target(name: "Moya", dependencies: ["Alamofire"]),
         .target(name: "ReactiveMoya", dependencies: ["Moya", "ReactiveSwift"]),
-        .target(name: "RxMoya", dependencies: ["Moya", "RxSwift"]),
+        .target(name: "RxMoya", dependencies: ["Moya", "RxSwift","RxCocoa"]),
         .testTarget(name: "MoyaTests", dependencies: ["Moya", "RxMoya", "ReactiveMoya", "Quick", "Nimble", "OHHTTPStubsSwift"]) // dev
     ]
 )
